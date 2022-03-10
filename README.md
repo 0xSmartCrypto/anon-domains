@@ -11,6 +11,15 @@ The contract makes use of:
 - Depending on domain length, charge users different prices
 - Withdrawl function is available to the contract deployer (owner)
 
+# Deploy to local
+
+- Edit `./scripts/run.js` to your liking
+- Run `npm run local`
+
+# Deploy to Polygon (Mumbai Testnet)
+
+- Edit `./scripts/deploy.js` to your liking
+- Run `npm run mumbai`
 # Misc
 
 The following tasks are available:
