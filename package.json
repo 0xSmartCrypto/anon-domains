@@ -1,13 +1,15 @@
 {
-  "name": "cool-domains",
+  "name": "anon-domains",
   "version": "1.0.0",
-  "description": "",
+  "description": "A smart contract for managing .anon domains",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "local": "npx hardhat run scripts/run.js",
+    "mumbai": "npx hardhat run scripts/deploy.js --network mumbai",
+    "cp": "cp ./artifacts/contracts/Domains.sol/Domains.json ../domain-starter/src/utils/contractABI.json"
   },
   "keywords": [],
-  "author": "",
+  "author": "0xSmartCrypto",
   "license": "ISC",
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.5",
@@ -18,6 +20,7 @@
     "hardhat": "^2.9.0"
   },
   "dependencies": {
-    "@openzeppelin/contracts": "^4.5.0"
+    "@openzeppelin/contracts": "^4.5.0",
+    "dotenv": "^16.0.0"
   }
 }
