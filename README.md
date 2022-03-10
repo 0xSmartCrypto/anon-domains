@@ -1,8 +1,19 @@
-# Basic Sample Hardhat Project
+# .anon domains (with Hardhat)
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
+The main contract `Domains.sol` lets you create and manage .anon domains.
 
-Try running some of the following tasks:
+Using ERC721 libraries from OpenZeppelin, this contract mints the .anon domains as NFTs, visible on compatible NFT marketplaces (e.g. OpenSea).
+
+The NFT is generated as an SVG, with the newly minted domain string embedded in the image.
+
+The contract makes use of:
+- Custom errors (e.g. `UnAuthorized`, `AlreadyRegistered` etc) to save gas
+- Depending on domain length, charge users different prices
+- Withdrawl function is available to the contract deployer (owner)
+
+# Misc
+
+The following tasks are available:
 
 ```shell
 npx hardhat accounts

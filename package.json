@@ -6,11 +6,11 @@
   "scripts": {
     "local": "npx hardhat run scripts/run.js",
     "mumbai": "npx hardhat run scripts/deploy.js --network mumbai",
-    "cp": "cp ./artifacts/contracts/Domains.sol/Domains.json ../domain-starter/src/utils/contractABI.json"
+    "cp": "cp ./artifacts/contracts/Domains.sol/Domains.json ../anon-domains-frontend/src/utils/contractABI.json"
   },
   "keywords": [],
   "author": "0xSmartCrypto",
-  "license": "ISC",
+  "private": true, 
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.5",
     "@nomiclabs/hardhat-waffle": "^2.0.3",
